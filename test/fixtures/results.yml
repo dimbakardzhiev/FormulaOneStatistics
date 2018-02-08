@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  race_id: 1
+  driver_id: 1
+  constructor_id: 1
+  grid: 1
+  position: 1
+  rank: 1
+
+two:
+  race_id: 1
+  driver_id: 1
+  constructor_id: 1
+  grid: 1
+  position: 1
+  rank: 1
