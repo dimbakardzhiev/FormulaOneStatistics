@@ -30,7 +30,7 @@
     "circuit_id": 4,
     "circuitRef": "catalunya",
     "name": "Circuit de Barcelona-Catalunya",
-    "location": "Montmel’_",
+    "location": "Montmel",
     "country": "Spain",
     "lat": 41.57,
     "lng": 2.26111
@@ -155,8 +155,8 @@
   {
     "circuit_id": 18,
     "circuitRef": "interlagos",
-    "name": "Aut’_dromo Jos’© Carlos Pace",
-    "location": "S’£o Paulo",
+    "name": "Autodormo Jose Carlos Pace",
+    "location": "Sao Paulo",
     "country": "Brazil",
     "lat": -23.7036,
     "lng": -46.6997
@@ -173,8 +173,8 @@
   {
     "circuit_id": 20,
     "circuitRef": "nurburgring",
-    "name": "N’_rburgring",
-    "location": "N’_rburg",
+    "name": "Nurburgring",
+    "location": "Nurburg",
     "country": "Germany",
     "lat": 50.3356,
     "lng": 6.9475
@@ -218,7 +218,7 @@
   {
     "circuit_id": 25,
     "circuitRef": "galvez",
-    "name": "Aut’_dromo Juan y Oscar G’lvez",
+    "name": "Autodromo Juan y Oscar Galvez",
     "location": "Buenos Aires",
     "country": "Argentina",
     "lat": -34.6943,
@@ -236,7 +236,7 @@
   {
     "circuit_id": 27,
     "circuitRef": "estoril",
-    "name": "Aut’_dromo do Estoril",
+    "name": "Autodromo do Estoril",
     "location": "Estoril",
     "country": "Portugal",
     "lat": 38.7506,
@@ -281,7 +281,7 @@
   {
     "circuit_id": 32,
     "circuitRef": "rodriguez",
-    "name": "Aut’_dromo Hermanos Rodr’_guez",
+    "name": "Autodromo Hermanos Rodriguez",
     "location": "Mexico City",
     "country": "Mexico",
     "lat": 19.4042,
@@ -317,7 +317,7 @@
   {
     "circuit_id": 36,
     "circuitRef": "jacarepagua",
-    "name": "Aut’_dromo Internacional Nelson Piquet",
+    "name": "Autodromo Internacional Nelson Piquet",
     "location": "Rio de Janeiro",
     "country": "Brazil",
     "lat": -22.9756,
@@ -434,7 +434,7 @@
   {
     "circuit_id": 49,
     "circuitRef": "montjuic",
-    "name": "Montju’Àc",
+    "name": "Montjuic",
     "location": "Barcelona",
     "country": "Spain",
     "lat": 41.3664,
