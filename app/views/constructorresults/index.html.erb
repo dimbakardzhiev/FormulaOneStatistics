@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Constructorresults</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Race</th>
+      <th>Constructor</th>
+      <th>Points</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @constructorresults.each do |constructorresult| %>
+      <tr>
+        <td><%= constructorresult.race_id %></td>
+        <td><%= constructorresult.constructor_id %></td>
+        <td><%= constructorresult.points %></td>
+        <td><%= link_to 'Show', constructorresult %></td>
+        <td><%= link_to 'Edit', edit_constructorresult_path(constructorresult) %></td>
+        <td><%= link_to 'Destroy', constructorresult, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Constructorresult', new_constructorresult_path %>

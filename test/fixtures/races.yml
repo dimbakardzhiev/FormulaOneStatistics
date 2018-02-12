@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  year: 1
+  round: 1
+  circuit_id: 1
+  name: MyString
+  date: 2018-02-12
+
+two:
+  year: 1
+  round: 1
+  circuit_id: 1
+  name: MyString
+  date: 2018-02-12
