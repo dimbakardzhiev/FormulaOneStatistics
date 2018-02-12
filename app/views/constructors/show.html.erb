@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @constructor.name %>
+</p>
+
+<p>
+  <strong>Nationality:</strong>
+  <%= @constructor.nationality %>
+</p>
+
+<%= link_to 'Edit', edit_constructor_path(@constructor) %> |
+<%= link_to 'Back', constructors_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  race_id: 1
+  constructor_id: 1
+  points: 9.99
+
+two:
+  race_id: 1
+  constructor_id: 1
+  points: 9.99
