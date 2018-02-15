@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180212102256) do
+ActiveRecord::Schema.define(version: 20180215135734) do
 
   create_table "circuits", force: :cascade do |t|
     t.string "name"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20180212102256) do
   create_table "constructorresults", force: :cascade do |t|
     t.integer "race_id"
     t.integer "constructor_id"
-    t.decimal "points"
+    t.integer "points"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -61,7 +61,7 @@ ActiveRecord::Schema.define(version: 20180212102256) do
     t.integer "grid"
     t.integer "position"
     t.integer "rank"
-    t.decimal "points"
+    t.integer "points"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

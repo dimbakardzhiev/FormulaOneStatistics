@@ -7,7 +7,7 @@ class CreateResults < ActiveRecord::Migration[5.1]
       t.integer :grid
       t.integer :position
       t.integer :rank
-      t.decimal :points
+      t.integer :points
 
       t.timestamps
     end
