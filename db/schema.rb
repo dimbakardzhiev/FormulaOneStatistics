@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20180215135734) do
+=======
+ActiveRecord::Schema.define(version: 20180215143000) do
+>>>>>>> d89ed2c796d6081b946de48b1b6628be74ad3ffb
 
   create_table "circuits", force: :cascade do |t|
     t.string "name"
@@ -61,9 +65,13 @@ ActiveRecord::Schema.define(version: 20180215135734) do
     t.integer "grid"
     t.integer "position"
     t.integer "rank"
+<<<<<<< HEAD
     t.integer "points"
+=======
+>>>>>>> d89ed2c796d6081b946de48b1b6628be74ad3ffb
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.decimal "points"
   end
 
 end
