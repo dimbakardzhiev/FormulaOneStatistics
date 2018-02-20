@@ -1,0 +1,22 @@
+<%= line_chart Driver.first.results.most_points_another,
+	title: "Top Ten Scores of Lewis Hamilton",
+	  colors: ['red'],
+	  library: {
+	  	yAxis: {
+	  		title: {
+	  			text: "Points achieved in this race"
+	  		},
+            labels: {
+               format: '{value} points'
+           }
+       },
+       xAxis: {
+       		title: {
+       			text: "Race name"
+       		}
+       },
+	    tooltip: {
+	      pointFormat: 'Points at this race: <b>{point.y}</b>'
+	    }
+  	}
+ %>

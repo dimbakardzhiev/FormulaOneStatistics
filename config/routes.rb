@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'charts/drivers_points'
+  get 'charts/drivers_rank'
+  
   resources :constructorresults
   resources :constructors
   resources :circuits

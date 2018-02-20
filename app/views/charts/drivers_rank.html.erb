@@ -1,0 +1,22 @@
+<%= line_chart Driver.first.results.rank_change,
+	title: "Position change of Lewis Hamilton in 2017",
+	  colors: ['green'],
+	  library: {
+	  	yAxis: {
+	  		title: {
+	  			text: "Position in this race"
+	  		},
+            labels: {
+               format: '{value}'
+           }
+       },
+       xAxis: {
+       		title: {
+       			text: "Race name"
+       		}
+       },
+	    tooltip: {
+	      pointFormat: 'Position at this race: <b>{point.y}</b>'
+	    }
+  	}
+ %>
