@@ -7,6 +7,7 @@ end
 
 gem 'chartkick'
 gem 'highcharts-rails'
+gem 'bootstrap-sass', '3.3.7'
 
 gem 'pry-rails', :group => :development
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
