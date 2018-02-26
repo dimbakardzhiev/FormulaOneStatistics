@@ -1,0 +1,54 @@
+<%= @driver_name %>
+<%= pie_chart Driver.find(@driver[:driver_id]).results.wins_by_year,
+	width: "600px", height: "500px",
+   colors: ['#7cb5ec', '#f7a35c', '#90ee7e', '#7798BF', '#aaeeee', '#ff0066',
+      '#eeaaee', '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
+   chart: {
+      style: {
+         fontFamily: 'Dosis, sans-serif'
+      }
+   },
+   title: {
+      style: {
+         fontSize: '16px',
+         fontWeight: 'bold',
+         textTransform: 'uppercase'
+      }
+   },
+	title: "Pie chart of positions of in 2017",
+	  library: {
+	    tooltip: {
+	      pointFormat: '<b>{point.y}</b> times in this position'
+	    },
+	  	plotOptions: {
+          pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: false
+            },
+            showInLegend: true
+         }
+    	},
+	   legend: {
+	   		title: {
+	   			text: '<span style= "color:#000">Position took in races</span><br/><span style= "font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
+	   			style: {
+	   				fontStyle: 'italic'
+	   			}
+	   		},
+            enabled: true,
+            layout: 'vertical',
+            align: 'right',
+            width: 200,
+            verticalAlign: 'middle',
+            useHTML: true,
+            symbolPadding: 5,
+            symbolWidth: 30
+        },
+    	series: [{
+    		colorByPoint: true,
+    		}]
+  	  }
+ %>
+

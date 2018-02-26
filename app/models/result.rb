@@ -18,15 +18,20 @@ end
 
 
 def self.rank_change
-	Result.includes(:race).where('races.year = 2017').pluck("races.name, position")
+	Result.includes(:race).where('races.year = 2017').pluck("races.id, position")
 end
 
 def self.position_changes 
-	Result.find_by_sql("SELECT R.name, A.position
+	Result.find_by_sql("SELECT R.id, A.position
 		FROM Races R, Results A
 		WHERE R.id = A.race_id
 		AND R.year = 2017 AND A.driver_id = 1
 		ORDER BY A.race_id asc")
 end	
+
+def self.wins_by_year
+	Result.includes(:race).where('races.year = 2017').group(:position).pluck("position, count(position) as points_number")
+end
+
 
 end

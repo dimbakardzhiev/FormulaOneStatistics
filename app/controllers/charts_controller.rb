@@ -3,6 +3,18 @@ class ChartsController < ApplicationController
   end
 
   def drivers_rank
+  	@drivers = Driver.all
+  	@results = Result.all
   end
 
+  def wins_form
+  	@results = Result.all
+  	@years = Race.all
+
+  end	
+
+  def wins_pie_chart
+  	@driver = params[:driver]
+  	@driver_name = Driver.find(@driver[:driver_id]).forename + " " +  Driver.find(@driver[:driver_id]).surname
+  end
 end
