@@ -10,30 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180215135734) do
-
-  create_table "circuits", force: :cascade do |t|
-    t.string "name"
-    t.string "location"
-    t.string "country"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "constructorresults", force: :cascade do |t|
-    t.integer "race_id"
-    t.integer "constructor_id"
-    t.integer "points"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "constructors", force: :cascade do |t|
-    t.string "name"
-    t.string "nationality"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 20180215135302) do
 
   create_table "drivers", force: :cascade do |t|
     t.string "forename"
@@ -47,7 +24,6 @@ ActiveRecord::Schema.define(version: 20180215135734) do
   create_table "races", force: :cascade do |t|
     t.integer "year"
     t.integer "round"
-    t.integer "circuit_id"
     t.string "name"
     t.date "date"
     t.datetime "created_at", null: false
@@ -57,10 +33,8 @@ ActiveRecord::Schema.define(version: 20180215135734) do
   create_table "results", force: :cascade do |t|
     t.integer "race_id"
     t.integer "driver_id"
-    t.integer "constructor_id"
     t.integer "grid"
     t.integer "position"
-    t.integer "rank"
     t.integer "points"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
