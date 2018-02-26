@@ -15,7 +15,7 @@ namespace :awad do
   		driver_var.dob = json_object["dob"]
   		driver_var.nationality = json_object["nationality"]
   		driver_var.save
-  end
+    end
 
     file_races = File.read('lib/assets/races.json')
     races_hash = JSON.parse(file_races)
@@ -37,6 +37,7 @@ namespace :awad do
     results_hash.each do |result|
 
       if value.include?(result["driver_id"])
+        
       puts result.inspect
       result_var = Result.new
       result_var.race_id = result["race_id"]
@@ -45,8 +46,8 @@ namespace :awad do
       result_var.position = result["positionOrder"]
       result_var.points = result["points"].to_i
       result_var.save
+      end
     end
-  end
 
   end
 end

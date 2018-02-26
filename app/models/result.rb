@@ -1,5 +1,6 @@
 class Result < ApplicationRecord
 	belongs_to :driver
+	belongs_to :race
 	
 def self.most_points
 	Result.find_by_sql("SELECT R.name, A.points 
