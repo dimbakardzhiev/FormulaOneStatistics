@@ -1,4 +1,4 @@
-<%= line_chart Driver.first.results.rank_change, 
+<%= line_chart Driver.find(6).results.rank_change, 
 	title: "Position change of Lewis Hamilton in 2017",
 	  colors: ['green', 'red'],
 	  library: {
@@ -21,27 +21,5 @@
   	}
  %>
 
- <%= line_chart Driver.find(20).results.rank_change,
-	title: "Position change of Sebastian Vettel in 2017",
-	  colors: ['green'],
-	  library: {
-	  	yAxis: {
-	  		title: {
-	  			text: "Position in this race"
-	  		},
-            labels: {
-               format: '{value}'
-           }
-       },
-       xAxis: {
-       		title: {
-       			text: "Race name"
-       		}
-       },
-	    tooltip: {
-	      pointFormat: 'Position at this race: <b>{point.y}</b>'
-	    }
-  	}
- %>
 
  <%= line_chart Result.pluck("driver_id").uniq.map {  |c| { name: c, data: @results.where(id: c)}  }, discrete: true %>

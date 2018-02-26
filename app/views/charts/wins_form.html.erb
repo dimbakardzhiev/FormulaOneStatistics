@@ -1,12 +1,15 @@
 <%= form_tag("wins_pie_chart", method: "get") do %>
   <%= label_tag(:driver, "Choose driver:") %>
-  <%= collection_select(:driver, :driver_id, Driver.all, :id, :forename, :prompt => true) %>
+  <%= collection_select(:driver, :driver_id, Driver.all, :id, @driver_fullname, :prompt => true) %>
   <%= label_tag(:second, "Choose year:") %>
-  <%= collection_select(:race, :race_id, Race.all, :id, :year, :prompt => true) %>
+  <%= collection_select(:race, :race_id, @years, :id, :year, :prompt => true) %>
   <%= submit_tag("Draw chart") %>
 <% end %>
 
 
+
+<!--
+Bootstrap form commented
 
 <form class="form-horizontal" action="/action_page.php">
   <div class="form-group">
@@ -27,3 +30,4 @@
     </div>
   </div>
 </form>
+-->

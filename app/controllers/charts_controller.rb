@@ -9,7 +9,8 @@ class ChartsController < ApplicationController
 
   def wins_form
   	@results = Result.all
-  	@years = Race.all
+  	@years = Race.select(:year).distinct
+  	@driver_fullname = Driver.find(@driver[:driver_id]).forename + " " + Driver.find(@driver[:driver_id]).surname
 
   end	
 
