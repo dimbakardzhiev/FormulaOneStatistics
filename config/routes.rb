@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'tweets/index'
+
   root 'static_pages#home'
   get 'charts/drivers_points'
   get 'charts/drivers_rank'
