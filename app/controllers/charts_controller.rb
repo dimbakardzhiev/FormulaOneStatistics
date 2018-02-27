@@ -9,13 +9,16 @@ class ChartsController < ApplicationController
 
   def wins_form
   	@results = Result.all
-  	@years = Race.select(:year).distinct
-  	@driver_fullname = Driver.find(@driver[:driver_id]).forename + " " + Driver.find(@driver[:driver_id]).surname
+  	@races = Race.all
+  	@years = Race.select(:year).distinct.where("year > 1999 AND year < 2018").order('year desc')
+  	#@driver_fullname = Driver.find(@driver[:driver_id]).forename + " " + Driver.find(@driver[:driver_id]).surname
 
   end	
 
   def wins_pie_chart
   	@driver = params[:driver]
+  	@year = params[:year]
+  	@year_string = @year[:year]
   	@driver_name = Driver.find(@driver[:driver_id]).forename + " " +  Driver.find(@driver[:driver_id]).surname
   end
 end
