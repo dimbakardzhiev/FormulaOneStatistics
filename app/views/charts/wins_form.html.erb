@@ -1,9 +1,14 @@
 <%= form_tag("wins_pie_chart", method: "get") do %>
   <%= label_tag(:driver, "Choose driver:") %>
   <%= collection_select(:driver, :driver_id, Driver.all, :id, :surname, :prompt => true) %>
+<<<<<<< HEAD
   <%= label_tag(:year, "Choose year:") %>
   <%= @races.races_years %>
   <%= collection_select(:year, :race_id, @years, :id, :year, :prompt => true) %>
+=======
+  <%= label_tag(:second, "Choose year:") %>
+  <%= collection_select(:race, :race_id, @years, :id, :year, :prompt => true) %>
+>>>>>>> a9913833ecb0e5cbb7ca8aec104424a57308cfca
   <%= submit_tag("Draw chart") %>
 <% end %>
 

@@ -9,8 +9,12 @@ class ChartsController < ApplicationController
 
   def wins_form
   	@results = Result.all
+<<<<<<< HEAD
   	@races = Race.all
   	@years = Race.select(:year).distinct.where("year > 1999 AND year < 2018").order('year desc')
+=======
+  	@years = Race.select(:year).distinct
+>>>>>>> a9913833ecb0e5cbb7ca8aec104424a57308cfca
   	#@driver_fullname = Driver.find(@driver[:driver_id]).forename + " " + Driver.find(@driver[:driver_id]).surname
 
   end	

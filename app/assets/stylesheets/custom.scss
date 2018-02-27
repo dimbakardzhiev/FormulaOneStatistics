@@ -3,7 +3,6 @@
 
 /* mixins, variables, etc. */
 
-$gray-medium-light: #eaeaea;
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -40,14 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-h2 {
-  font-size: 1.2em;
+  font-size: 3.5em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
@@ -55,8 +47,12 @@ h2 {
   color: $gray-light;
 }
 
+h2 {
+  
+}
+
 p {
-  font-size: 1.1em;
+  font-size: 5em;
   line-height: 1.7em;
 }
 
