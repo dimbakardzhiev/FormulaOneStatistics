@@ -13,7 +13,7 @@ class TweetsController < ApplicationController
  		  
         if object.is_a?(Twitter::Tweet)
            @tweets.push(object.text)
- 	      end
+ 	     end
   end
 
 	end
