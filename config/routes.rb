@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  get 'tweets/index'
+  
 
   root 'static_pages#home'
   get 'charts/drivers_points'
@@ -11,7 +11,8 @@ Rails.application.routes.draw do
   get '/home', to: 'static_pages#home' 
   get '/charts', to: 'charts#wins_form'
   get '/wins_pie_chart', to: 'charts#wins_pie_chart'
-  
+  get '/twitterfeed', to: 'tweets#index'
+
   resources :races
   resources :results
   resources :drivers
