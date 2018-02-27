@@ -30,7 +30,7 @@ def self.position_changes
 end	
 
 def self.wins_by_year
-	Result.includes(:race).where('races.year = 2017').group(:position).pluck("position, count(position) as points_number")
+	Result.includes(:race).group(:position).where('races.year =' + $year).pluck("position, count(position) as points_number")
 end
 
 

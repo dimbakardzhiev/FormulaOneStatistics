@@ -1,5 +1,3 @@
-<%= @year_string %>
-
 <%= pie_chart Driver.find(@driver[:driver_id]).results.wins_by_year,
 	width: "600px", height: "500px",
    colors: ['#7cb5ec', '#f7a35c', '#90ee7e', '#7798BF', '#aaeeee', '#ff0066',
@@ -16,7 +14,7 @@
          textTransform: 'uppercase'
       }
    },
-	title: "Pie chart of positions of " + @driver_name  + " in" + @year_string,
+	title: "Pie chart of positions of " + @driver_name  + " in " + $year,
 	  library: {
 	    tooltip: {
 	      pointFormat: '<b>{point.y}</b> times in this position'
