@@ -1,22 +1,23 @@
-<div id = 'tweets'>
-<ul>
-<% @tweets.each do |a| %>
-	<%=a %><br><br>
-<% end %>
-</ul>
+<p><div id = 'tweets'>
+		<ul>
+		<% @tweets.each do |a| %>
+			<%=a %><br><br>
+		<% end %>
+		</ul>
 </div>
+</p>
 
-<script>
+	<script>
 
-	function loadlink(){
-	    $('#tweets').load('/twitterfeed',function () {
-	         $(this).unwrap();
-	    });
-	}
+		function loadlink(){
+		    $('#tweets').load('/twitterfeed',function () {
+		         $(this).unwrap();
+		    });
+		}
 
-	loadlink(); // This will run on page load
-	setInterval(function(){
-	    loadlink() // this will run after every 5 seconds
-	}, 10000);
+		loadlink(); // This will run on page load
+		setInterval(function(){
+		    loadlink() // this will run after every 5 seconds
+		}, 15000);
 
-</script>
+	</script>
