@@ -18,8 +18,10 @@ Rails.application.routes.draw do
   get '/wins_pie_chart', to: 'charts#wins_pie_chart'
   get '/twitterfeed', to: 'tweets#index'
 
-  resources :races
-  resources :results
-  resources :drivers
+  resources :races, defaults: {format: :json}
+  resources :results, defaults: {format: :json}
+  resources :drivers, defaults: {format: :json}
+
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
