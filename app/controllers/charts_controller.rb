@@ -1,5 +1,7 @@
 class ChartsController < ApplicationController
   def drivers_points
+    @drivers = Driver.all
+    @results = Result.all
   end
 
   def drivers_rank

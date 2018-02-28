@@ -1,10 +1,14 @@
-<%= line_chart Driver.first.results.most_points_another,
-	title: "Top Ten Scores of Lewis Hamilton",
-	  colors: ['red'],
+<%= column_chart Result.testing,
+	id: 'drivers_column_chart',
+	width: "1000px",
+	height: "500px", 
+	title: "Column chart of acheived points of drivers in 2017",
+	  colors: ['#7cb5ec', '#f7a35c', '#90ee7e', '#7798BF', '#aaeeee', '#ff0066',
+      '#eeaaee', '#55BF3B', '#DF5353', '#7798BF', '#993300', '#666999', '#003300', '#0000cc', '#66ffcc'],
 	  library: {
 	  	yAxis: {
 	  		title: {
-	  			text: "Points achieved in this race"
+	  			text: "Points achieved this year"
 	  		},
             labels: {
                format: '{value} points'
@@ -12,11 +16,19 @@
        },
        xAxis: {
        		title: {
-       			text: "Race name"
+       			text: "Driver name"
+       		}
+       },
+       plotOptions: {
+       		column: {
+       			colorByPoint: true
        		}
        },
 	    tooltip: {
-	      pointFormat: 'Points at this race: <b>{point.y}</b>'
-	    }
+	      pointFormat: 'Points at this year: <b>{point.y}</b>'
+	    },
+	    series: [{
+    		colorByPoint: true,
+    		}]
   	}
  %>
