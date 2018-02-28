@@ -2,6 +2,7 @@ class ChartsController < ApplicationController
   def drivers_points
     @drivers = Driver.all
     @results = Result.all
+    $year_column_chart = params[:year]
   end
 
   def drivers_rank
@@ -13,8 +14,10 @@ class ChartsController < ApplicationController
   	@results = Result.all
   	@races = Race.all
   	#@driver_fullname = Driver.find(@driver[:driver_id]).forename + " " + Driver.find(@driver[:driver_id]).surname
-
   end	
+
+  def column_chart_form
+  end  
 
   def wins_pie_chart
   	@driver = params[:driver]

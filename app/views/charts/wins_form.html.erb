@@ -1,4 +1,4 @@
-<%= form_tag("wins_pie_chart", method: "get") do %>
+<%= form_tag("wins_pie_chart", method: "post") do %>
   <%= label_tag(:driver, "Choose driver:") %>
   <%= collection_select(:driver, :driver_id, Driver.all, :id, :surname, :prompt => true) %>
   <%= label_tag(:year, "Choose year:") %>
