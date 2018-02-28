@@ -1,7 +1,9 @@
-<%= form_tag("drivers_points", method: "post") do %>
-  <%= label_tag(:year, "Choose year:") %>
+<% provide(:title, "Column Charts") %>
+<h2>Column Chart Form</h2>
+<%= form_tag("charts/drivers_points", method: "post") do %>
+  <%= label_tag(:year, "Select Year:") %>
   <%= select_tag(:year, options_for_select({"2017" => "2017", "2016" => "2016", "2015" => "2015", "2014" => "2014",
-    "2013" => "2013", "2012" => "2012", "2011" => "2011", "2010" => "2010", "2009" => "2009", "2008" => "2008", "2007" => "2007", "2006" => "2006",
-    "2005" => "2005", "2004" => "2004", "2003" => "2003", "2002" => "2002", "2001" => "2001"}), :prompt => "Please select year") %>
-  <%= submit_tag("Draw column chart") %>
+    "2013" => "2013", "2012" => "2012", "2011" => "2011"}), :prompt => "Please select year") %>
+  <%= submit_tag("Display Chart") %>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
 <% end %>

@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   
   root 'static_pages#home'
   get 'charts/drivers_rank'
-  get 'charts/column_chart_form'
   
   post 'charts/drivers_points'
   post 'charts/wins_pie_chart'
@@ -15,6 +14,7 @@ Rails.application.routes.draw do
   get '/home', to: 'static_pages#home' 
   get '/twitterfeed', to: 'tweets#index'
   get '/piecharts', to: 'charts#wins_form'
+  get '/columncharts', to: 'charts#column_chart_form'
 
   resources :races
   resources :results

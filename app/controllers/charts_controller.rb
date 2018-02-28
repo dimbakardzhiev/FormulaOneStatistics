@@ -5,6 +5,9 @@ class ChartsController < ApplicationController
     @drivers = Driver.all
     @results = Result.all
     $year_column_chart = params[:year]
+    if $year_column_chart == "" 
+     redirect_to("/columncharts")
+    end 
   end
 
   def drivers_rank
@@ -25,5 +28,8 @@ class ChartsController < ApplicationController
   	@driver = params[:driver]
   	$year = params[:year]
   	@driver_name = Driver.find(@driver[:driver_id]).forename + " " +  Driver.find(@driver[:driver_id]).surname
+    if $year == "" 
+     redirect_to("/piecharts")
+    end 
   end
 end

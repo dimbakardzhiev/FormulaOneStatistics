@@ -33,7 +33,7 @@ namespace :awad do
     file_results = File.read('lib/assets/results.json')
     results_hash = JSON.parse(file_results)
 
-    value = [1,2,3,4,5,6]
+    value = [1,2,3,4,5,6,7,8]
     results_hash.each do |result|
 
       if value.include?(result["driver_id"])
