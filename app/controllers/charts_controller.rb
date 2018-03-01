@@ -11,6 +11,7 @@ class ChartsController < ApplicationController
   end
 
   def drivers_rank
+    @same_driver_boolean = 0
   	@driver_first = params[:driver_first]
     @driver_second = params[:driver_second]
     @driver_first_name = Driver.find(@driver_first[:driver_id]).forename + " " +  Driver.find(@driver_first[:driver_id]).surname
@@ -18,6 +19,12 @@ class ChartsController < ApplicationController
     @drivers = Driver.find(@driver_first[:driver_id],@driver_second[:driver_id])
     @results = Result.all
     @year_line_chart = params[:year_line_chart]
+    if (@year_line_chart == "") 
+     redirect_to("/linecharts")
+    end 
+    if @driver_first == @driver_second
+      @same_driver_boolean = 1
+    end
   end
 
   def wins_form
@@ -33,8 +40,11 @@ class ChartsController < ApplicationController
   	@driver = params[:driver]
   	$year = params[:year]
   	@driver_name = Driver.find(@driver[:driver_id]).forename + " " +  Driver.find(@driver[:driver_id]).surname
-    if $year == "" 
+    if $year == "" || @driver[:driver_id] == " "
      redirect_to("/piecharts")
-    end 
+    end
+    if @driver[:driver_id] == " " && $year == ""
+      redirect_to("/piecharts") 
+    end
   end
 end

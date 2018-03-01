@@ -1,3 +1,5 @@
+<% if @same_driver_boolean == 0 %>
+
 <%= line_chart @drivers.map { |driver|
 	{
 		:name => driver.surname,
@@ -40,6 +42,47 @@ id: 'drivers_line_chart',
     		}]
   	}
 %>
+
+<% else %>
+
+<%= line_chart Driver.find(@driver_first[:driver_id]).results.rank_change,
+id: 'drivers_line_chart',
+  width: "1000px",
+  height: "500px", 
+  title: "Line chart of " + @driver_first_name + " in " + @year_line_chart,
+    colors: ['#7cb5ec', '#f7a35c', '#90ee7e', '#7798BF', '#aaeeee', '#ff0066',
+      '#eeaaee', '#55BF3B', '#DF5353', '#7798BF', '#993300', '#666999', '#003300', '#0000cc', '#66ffcc'],
+    library: {
+      yAxis: {
+        title: {
+          text: "Position"
+        },
+            labels: {
+               format: '{value}'
+           }
+       },
+       xAxis: {
+          title: {
+            text: "Races"
+          }
+       },
+       plotOptions: {
+          column: {
+            colorByPoint: true
+          },
+          series: {
+            borderWidth: 0
+          }
+       },
+      tooltip: {
+        pointFormat: 'Position at this race: <b>{point.y}</b>'
+      },
+      series: [{
+        colorByPoint: true,
+        }]
+    }
+  %>
+  <% end %>
 
 <div class="container">
   <a href="/linecharts" class="btn btn-warning" role="button">Pick Another Drivers</a>
