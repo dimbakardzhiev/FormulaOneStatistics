@@ -1,35 +1,31 @@
-<p><div id = 'tweets'>
-		<ul>
-		<% @tweets.each do |a| %>
-			<%=a %><br><br>
-		<% end %>
-		</ul>
+<% provide(:title, "Twitter Live Feed") %>
+
+<h1>Twitter Live Feed</h1>
+
+<center><div class = 'imageddiv'>
+	<img src="twitter_PNG32.png" alt="Twitter Logo" width= '100px' height= '100px' style = 'margin-bottom: 20px'>
 </div>
-</p>
+</center>
+
+<div id = 'tweetsdiv'>
+		<% @tweets.each do |a| %>
+			<div class = 'panel panel-default'>
+			<div class = 'panel-body' style = 'height:80px; background-color:#ccffff'>
+				<p style = "font-family: 'Raleway',sans-serif; font-size: 16px; font-weight: 500; line-height: 32px; margin: 0 0 24px;"><%=a %></p>
+			</div>
+			</div>
+		<% end %>
+</div>
+
 
 	<script>
 
 		function loadlink(){
-		    $('#tweets').load('/twitterfeed',function () {
-		         $(this).unwrap();
-		    });
+		    $('#tweetsdiv').load(window.location.href + " #tweetsdiv");
 		}
-<<<<<<< HEAD
 	loadlink(); // This will run on page load
 	setInterval(function(){
 	    loadlink() // this will run after every 10 seconds
 	}, 10000);
-		loadlink(); // This will run on page load
-		setInterval(function(){
-		    loadlink() // this will run after every 5 seconds
-		}, 15000);
-=======
-
-
-		loadlink(); // This will run on page load
-		setInterval(function(){
-		    loadlink() // this will run after every 5 seconds
-		}, 5000);
->>>>>>> c22356fe9183bab2b29893fa628a4e7be21083c3
-
+		
 	</script>
