@@ -11,8 +11,13 @@ class ChartsController < ApplicationController
   end
 
   def drivers_rank
-  	@drivers = Driver.all
-  	@results = Result.all
+  	@driver_first = params[:driver_first]
+    @driver_second = params[:driver_second]
+    @driver_first_name = Driver.find(@driver_first[:driver_id]).forename + " " +  Driver.find(@driver_first[:driver_id]).surname
+    @driver_second_name = Driver.find(@driver_second[:driver_id]).forename + " " +  Driver.find(@driver_second[:driver_id]).surname
+    @drivers = Driver.find(@driver_first[:driver_id],@driver_second[:driver_id])
+    @results = Result.all
+    @year_line_chart = params[:year_line_chart]
   end
 
   def wins_form

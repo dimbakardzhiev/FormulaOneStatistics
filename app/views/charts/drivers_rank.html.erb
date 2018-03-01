@@ -1,13 +1,19 @@
-<%= line_chart Driver.first.results.rank_change,
-	id: 'drivers_line_chart',
+<%= line_chart @drivers.map { |driver|
+	{
+		:name => driver.surname,
+		:data => driver.results.includes(:race).where('races.year =' + @year_line_chart).pluck("races.name, position")
+	}
+},
+id: 'drivers_line_chart',
 	width: "1000px",
 	height: "500px", 
-	title: "Position change of Lewis Hamilton in 2017",
-	  colors: ['green', 'red'],
+	title: "Line chart of comparision of " + @driver_first_name +" and " + @driver_second_name + " in " + @year_line_chart,
+	  colors: ['#7cb5ec', '#f7a35c', '#90ee7e', '#7798BF', '#aaeeee', '#ff0066',
+      '#eeaaee', '#55BF3B', '#DF5353', '#7798BF', '#993300', '#666999', '#003300', '#0000cc', '#66ffcc'],
 	  library: {
 	  	yAxis: {
 	  		title: {
-	  			text: "Position in this race"
+	  			text: "Position"
 	  		},
             labels: {
                format: '{value}'
@@ -15,23 +21,26 @@
        },
        xAxis: {
        		title: {
-       			text: "Race name"
+       			text: "Races"
+       		}
+       },
+       plotOptions: {
+       		column: {
+       			colorByPoint: true
+       		},
+       		series: {
+       			borderWidth: 0
        		}
        },
 	    tooltip: {
 	      pointFormat: 'Position at this race: <b>{point.y}</b>'
 	    },
 	    series: [{
-	    	name: 'Lewis Hamilton',
-	    	data: Driver.first.results.includes(:race).where('races.year = 2017').pluck("races.name, position")
-	    },
-	    {
-	    	name: 'Sebastian Vettel',
-	    	data: Driver.find(5).results.includes(:race).where('races.year = 2017').pluck("races.name, position")
-	    }
-	]
+    		colorByPoint: true,
+    		}]
   	}
- %>
+%>
 
-
-
+<div class="container">
+  <a href="/linecharts" class="btn btn-warning" role="button">Pick Another Drivers</a>
+</div>
