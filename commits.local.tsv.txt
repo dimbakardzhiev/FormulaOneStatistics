@@ -1,0 +1,58 @@
+f6b3900	Dimitar Bakardzhiev	Thu Mar 1 20:54:26 2018	new carousel, labels fixed
+802dc04	Dimitar Bakardzhiev	Thu Mar 1 18:17:32 2018	exceptions
+e365ab1	Dimitar Bakardzhiev	Thu Mar 1 17:03:48 2018	charts fixed
+bc75cd5	Alga Abilesh	Thu Mar 1 15:50:46 2018	Merge branch 'master' of bitbucket.org:Dimitar Bakardzhiev/awad_formula_one
+88a072b	Alga Abilesh	Thu Mar 1 15:50:35 2018	twitter fix
+a16eb1c	Dimitar Bakardzhiev	Thu Mar 1 15:48:27 2018	dataset fixed
+de3daf9	Dimitar Bakardzhiev	Thu Mar 1 15:01:19 2018	drivers replaced
+8aab86c	Dimitar Bakardzhiev	Thu Mar 1 13:01:48 2018	line charts form
+9aee712	Dimitar Bakardzhiev	Wed Feb 28 23:44:28 2018	new drivers and forms added
+fa8d425	Dimitar Bakardzhiev	Wed Feb 28 22:46:14 2018	form rescue
+c45f9eb	Dimitar Bakardzhiev	Wed Feb 28 21:42:28 2018	404 page added
+726b94a	Alga Abilesh	Wed Feb 28 16:56:06 2018	Merging problems
+c3f63d3	Alga Abilesh	Wed Feb 28 16:54:36 2018	Column chart  is finished
+c22356f	Dimitar Bakardzhiev	Wed Feb 28 16:43:45 2018	API complete
+e324298	Dimitar Bakardzhiev	Wed Feb 28 16:01:40 2018	API
+f9e7655	Dimitar Bakardzhiev	Wed Feb 28 16:00:59 2018	routes changes
+537da4c	Dimitar Bakardzhiev	Wed Feb 28 15:03:02 2018	small changes to routes
+4aff5ce	Alga Abilesh	Wed Feb 28 14:58:07 2018	merging
+fab78df	Alga Abilesh	Wed Feb 28 14:57:10 2018	Column chart added
+e9d9379	Dimitar Bakardzhiev	Wed Feb 28 14:18:02 2018	API version 1
+6ed1498	Dimitar Bakardzhiev	Wed Feb 28 13:17:47 2018	small changes
+e71ba6d	Dimitar Bakardzhiev	Tue Feb 27 21:03:01 2018	Live feed mentions
+cf5a1e9	Dimitar Bakardzhiev	Tue Feb 27 19:41:55 2018	Ajax added for refreshing page
+9e91b34	Dimitar Bakardzhiev	Tue Feb 27 18:48:58 2018	tweets fixed
+5917aab	Alga Abilesh	Tue Feb 27 18:20:03 2018	Pie chart complete
+ed553f5	Alga Abilesh	Tue Feb 27 09:46:20 2018	Small changes to form
+0c08aea	Alga Abilesh	Tue Feb 27 09:42:27 2018	Small changes to form
+a991383	Dimitar Bakardzhiev	Tue Feb 27 09:40:30 2018	small routes changes
+a146af0	Dimitar Bakardzhiev	Mon Feb 26 23:05:02 2018	about page done
+cb92b46	Dimitar Bakardzhiev	Mon Feb 26 19:55:29 2018	stylesheet edit
+bdb8978	Alga Abilesh	Mon Feb 26 18:18:51 2018	Merge branch 'master' of https://bitbucket.org/Dimitar Bakardzhiev/awad_formula_one
+15d7e11	Alga Abilesh	Mon Feb 26 18:12:38 2018	Added some small changes to charts
+a219b01	Dimitar Bakardzhiev	Mon Feb 26 18:12:13 2018	routes changes
+2756c44	Dimitar Bakardzhiev	Mon Feb 26 15:45:10 2018	carousel updated
+199e404	Dimitar Bakardzhiev	Mon Feb 26 12:32:08 2018	dataset reduced
+623a26c	Alga Abilesh	Mon Feb 26 09:49:06 2018	x Merge branch 'master' of https://bitbucket.org/Dimitar Bakardzhiev/awad_formula_one
+e503538	Alga Abilesh	Mon Feb 26 09:39:38 2018	Modified the pie chart
+be99b2d	Dimitar Bakardzhiev	Sun Feb 25 23:14:30 2018	footer added
+7941d2b	Dimitar Bakardzhiev	Thu Feb 22 19:12:52 2018	carousel added
+227f8ee	Dimitar Bakardzhiev	Thu Feb 22 17:43:25 2018	dropdown menu added
+11b897e	Dimitar Bakardzhiev	Thu Feb 22 16:13:42 2018	layout start
+1b04c2f	Dimitar Bakardzhiev	Wed Feb 21 18:20:21 2018	bootstrap added
+c888eab	Dimitar Bakardzhiev	Wed Feb 21 14:46:46 2018	static_pages controller added for home page
+a19d91a	Dimitar Bakardzhiev	Wed Feb 21 12:13:26 2018	bootstrap start
+5f79dc5	Alga Abilesh	Tue Feb 20 21:13:49 2018	added some charts, not working right now fully correct
+647e536	Dimitar Bakardzhiev	Thu Feb 15 16:45:17 2018	fix
+8b50001	Dimitar Bakardzhiev	Thu Feb 15 16:03:25 2018	Added foreign key constraints, all tables parsed and linked
+d89ed2c	Dimitar Bakardzhiev	Thu Feb 15 14:31:28 2018	Points column added to Results table
+8ae5b45	Alga Abilesh	Thu Feb 15 14:01:51 2018	Adding foreign key constraints
+1565cc0	Dimitar Bakardzhiev	Mon Feb 12 11:18:25 2018	Merged Dimitar into master
+dac84af	Dimitar Bakardzhiev	Mon Feb 12 11:16:38 2018	json removed
+5a6ee39	Dimitar Bakardzhiev	Mon Feb 12 10:58:35 2018	DB migration and relationships without FK constraints
+aeba71d	Dimitar Bakardzhiev	Fri Feb 9 15:12:15 2018	Merged Dimitar into master
+5486124	Dimitar Bakardzhiev	Fri Feb 9 15:09:05 2018	new json files added
+f770b8a	Dimitar Bakardzhiev	Fri Feb 9 14:57:20 2018	new json files added
+8b186ac	Dimitar Bakardzhiev	Thu Feb 8 21:00:23 2018	Drivers and Results parsing, driver_id foreign key in results table
+2fd2a51	Dimitar Bakardzhiev	Thu Feb 8 20:52:22 2018	Results scaffolding
+c6e5de3	Dimitar Bakardzhiev	Thu Feb 8 20:47:32 2018	Drivers scaffolding
