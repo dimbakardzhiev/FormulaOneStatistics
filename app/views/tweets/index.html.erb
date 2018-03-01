@@ -11,7 +11,7 @@
 		<% @tweets.each do |a| %>
 			<div class = 'panel panel-default'>
 			<div class = 'panel-body' style = 'height:80px; background-color:#ccffff'>
-				<p style = "font-family: 'Raleway',sans-serif; font-size: 16px; font-weight: 500; line-height: 32px; margin: 0 0 24px;"><%=a %></p>
+				<p style = "font-family: 'Raleway',sans-serif; font-size: 16px; font-weight: 500; margin: 0 0 24px;"><%=a %></p>
 			</div>
 			</div>
 		<% end %>
@@ -26,6 +26,6 @@
 	loadlink(); // This will run on page load
 	setInterval(function(){
 	    loadlink() // this will run after every 10 seconds
-	}, 10000);
+	}, 5000);
 		
 	</script>

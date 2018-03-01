@@ -9,7 +9,7 @@ class TweetsController < ApplicationController
   	
   def index
 		  @tweets = []
-      $twitter.search('formula one', result_type: "recent").take(15).collect.each do |object|
+      $twitter.search('formula one -rt', lang: "en", result_type: "recent").take(15).collect.each do |object|
  		  
         if object.is_a?(Twitter::Tweet)
            @tweets.push(object.full_text)
