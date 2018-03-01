@@ -1,5 +1,6 @@
 <% provide(:title, "Line Charts") %>
-<h1>Line Chart Form</h1>
+<h1>Line Charts</h1>
+<center>
 <%= form_tag("/charts/drivers_rank", method: "post") do %>
   <%= label_tag(:driver, "Select first driver:") %>
   <%= collection_select(:driver_first, :driver_id, Driver.all, :id, :surname, :prompt => true) %>
@@ -11,3 +12,4 @@
   <%= submit_tag("Display Chart") %>
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
 <% end %>
+</center>

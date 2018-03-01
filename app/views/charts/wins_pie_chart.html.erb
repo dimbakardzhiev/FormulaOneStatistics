@@ -1,5 +1,7 @@
+<% provide(:title, "Pie Chart") %>
+<center> <div>
 <%= pie_chart Driver.find(@driver[:driver_id]).results.wins_by_year,
-	width: "600px", height: "500px",
+	width: "700px", height: "600px",
    colors: ['#7cb5ec', '#f7a35c', '#90ee7e', '#7798BF', '#aaeeee', '#ff0066',
       '#eeaaee', '#55BF3B', '#DF5353', '#7798BF', '#993300', '#666999', '#003300', '#0000cc', '#66ffcc'],
    chart: {
@@ -14,10 +16,10 @@
          textTransform: 'uppercase'
       }
    },
-	title: "Pie chart of positions of " + @driver_name  + " in " + $year,
+	title: @driver_name + "'s results in " + $year,
 	  library: {
 	    tooltip: {
-	      pointFormat: '<b>{point.y}</b> times in this position'
+	      pointFormat: '{point.y} times in this position'
 	    },
 	  	plotOptions: {
           pie: {
@@ -31,7 +33,7 @@
     	},
 	   legend: {
 	   		title: {
-	   			text: '<span style= "color:#000">Position took in races</span><br/><span style= "font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
+	   			text: '<span style= "color:#000"><b>Race Position</b><br></span><br/><span style= "font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
 	   			style: {
 	   				fontStyle: 'italic'
 	   			}
@@ -50,7 +52,10 @@
     		}]
   	  }
  %>
-
- <div class="container">
-  <a href="/piecharts" class="btn btn-warning" role="button">Pick Another Driver</a>
 </div>
+
+
+ <div class="button">
+  <a href="/piecharts" class="btn btn-warning" role="button">Choose Another Driver</a>
+</div>
+</center>

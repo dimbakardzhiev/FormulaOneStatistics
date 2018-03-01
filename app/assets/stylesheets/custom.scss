@@ -65,8 +65,9 @@ p {
 /* forms */
 
 input, textarea, select, .uneditable-input {
+
   border: 1px solid #bbb;
-  width: 100%;
+  width: 50%;
   margin-bottom: 15px;
 }
 
@@ -74,3 +75,14 @@ input {
   height: auto !important;
 }
 
+.button {
+  padding: 25px
+}
+
+.transbox {
+  margin: 10px;
+  background-color: black;
+  border: 2px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
