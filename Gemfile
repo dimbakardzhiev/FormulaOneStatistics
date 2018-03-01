@@ -65,6 +65,13 @@ group :production do
 
   gem 'pg', '~> 0.20.0'
 
+  adapter: postgresql
+  encoding: unicode
+  database: dfdg1kt0gs3su4
+  pool: 5
+  username: qsspptpbbsxhnd
+  password: e9091450962ab3b43bbddb07ab31c7c928ed2be839f7348ba7f4a76fde8fba69
+
 end
 
 
