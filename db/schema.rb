@@ -23,7 +23,9 @@ ActiveRecord::Schema.define(version: 20180215135302) do
 
   create_table "races", force: :cascade do |t|
     t.integer "year"
+    t.integer "round"
     t.string "name"
+    t.date "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

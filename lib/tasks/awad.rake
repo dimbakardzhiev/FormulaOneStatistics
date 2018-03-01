@@ -42,7 +42,6 @@ namespace :awad do
       result_var = Result.new
       result_var.race_id = result["race_id"]
       result_var.driver_id = result["driver_id"]
-      result_var.grid = result["grid"]
       result_var.position = result["positionOrder"]
       result_var.points = result["points"].to_i
       result_var.save
