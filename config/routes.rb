@@ -4,9 +4,9 @@ Rails.application.routes.draw do
   get 'charts/drivers_rank'
   
   
-  post 'charts/drivers_points'
-  post 'charts/wins_pie_chart'
-  post 'charts/drivers_rank'
+  get 'charts/drivers_points'
+  get 'charts/wins_pie_chart'
+  get 'charts/drivers_rank'
   
   get 'api/drivers'
   get 'api/results'
