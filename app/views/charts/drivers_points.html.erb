@@ -1,15 +1,16 @@
+<% provide(:title, "Column Chart") %>
 <center>
 <%= column_chart Result.column_chart,
 	id: 'drivers_column_chart',
 	width: "1000px",
 	height: "500px", 
-	title: "Column chart of acheived points of drivers in " + $year_column_chart,
+	title: "Points scored in " + $year_column_chart,
 	  colors: ['#7cb5ec', '#f7a35c', '#90ee7e', '#7798BF', '#aaeeee', '#ff0066',
       '#eeaaee', '#55BF3B', '#DF5353', '#7798BF', '#993300', '#666999', '#003300', '#0000cc', '#66ffcc'],
 	  library: {
 	  	yAxis: {
 	  		title: {
-	  			text: "Points achieved this year"
+	  			text: "Points"
 	  		},
             labels: {
                format: '{value} points'
@@ -17,7 +18,7 @@
        },
        xAxis: {
        		title: {
-       			text: "Driver name"
+       			text: "Driver's name"
        		}
        },
        plotOptions: {

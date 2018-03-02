@@ -1,6 +1,7 @@
 <% provide(:title, "Pie Chart Form") %>
 <center>
-	<h1>Pie Chart Form</h1>
+	<h1>Pie Charts</h1>
+	<h2>View a driver's results over one season</h2>
 	<%= form_tag("/charts/wins_pie_chart", method: "get") do %>
 	  <%= label_tag(:driver, "Select driver:") %>
 	  <%= collection_select(:driver, :driver_id, Driver.all, :id, :surname, :prompt => true, :selected => 1 ) %>
