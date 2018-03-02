@@ -1,3 +1,15 @@
+0bb583f	Dimitar Bakardzhiev	Fri Mar 2 18:54:04 2018	final final
+f3339ec	Dimitar Bakardzhiev	Fri Mar 2 18:41:56 2018	final commit
+027ec44	Dimitar Bakardzhiev	Fri Mar 2 18:39:22 2018	readme file
+5db8037	Dimitar Bakardzhiev	Fri Mar 2 17:31:22 2018	tweets updates again
+d10562e	Dimitar Bakardzhiev	Fri Mar 2 17:29:34 2018	tweets updated
+06ae059	Dimitar Bakardzhiev	Fri Mar 2 17:26:27 2018	tweets
+e8a38e3	Dimitar Bakardzhiev	Fri Mar 2 17:05:01 2018	twitter fixes
+e50e264	Dimitar Bakardzhiev	Fri Mar 2 17:00:23 2018	twitter fix
+d4284e2	Dimitar Bakardzhiev	Fri Mar 2 16:22:01 2018	small changes
+c6909cb	Dimitar Bakardzhiev	Fri Mar 2 16:16:15 2018	form changes
+860589a	Dimitar Bakardzhiev	Fri Mar 2 15:55:26 2018	tweets changes
+b810fb7	Dimitar Bakardzhiev	Fri Mar 2 15:17:12 2018	styling and labels changing
 bc02e62	Dimitar Bakardzhiev	Fri Mar 2 14:06:26 2018	Carousel finished
 0f02ca6	Dimitar Bakardzhiev	Fri Mar 2 13:29:18 2018	form changes
 eea936f	Dimitar Bakardzhiev	Fri Mar 2 13:22:21 2018	hamburger errors in Heroku
