@@ -27,4 +27,7 @@ How to run:
  	- git push heroku master - push the code from your local repository’s master branch to your heroku remote
  	- heroku run rake db:migrate - to run the database migrations
  	- heroku run rake awad:seed_awad - to parse the data from the JSON files
- 	- heroku open - to launch the applicaiton on the Heroku server   
+ 	- heroku open - to launch the applicaiton on the Heroku server
+
+•	The application was deployed to Heroku in production environment, using PostgreSQL
+•	Access the application from any browser via the following url: https://awad-formula-one.herokuapp.com/
