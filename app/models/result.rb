@@ -34,7 +34,7 @@ def self.wins_by_year
 end
 
 def self.column_chart
-	Result.includes(:driver).includes(:race).group(:driver_id).order('sum(points) desc').where('races.year =2017').pluck("surname, sum(points) as overall_points")
+	Result.includes(:driver).includes(:race).group(:driver_id).order('sum(points) desc').where('races.year =' + $year_column_chart).pluck("surname, sum(points) as overall_points")
 end
 
 end
