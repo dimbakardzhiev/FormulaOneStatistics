@@ -1,13 +1,13 @@
 <% provide(:title, "Pie Chart Form") %>
 <center>
-<h1>Pie Charts</h1>
-<%= form_tag("/charts/wins_pie_chart", method: "post") do %>
-  <%= label_tag(:driver, "Select driver:") %>
-  <%= collection_select(:driver, :driver_id, Driver.all, :id, :surname, :prompt => true) %>
-  <%= label_tag(:year, "Select year:") %>
-  <%= select_tag(:year, options_for_select({"2017" => "2017", "2016" => "2016", "2015" => "2015", "2014" => "2014",
-    "2013" => "2013", "2012" => "2012"}), :prompt => "Select year") %>
-  <%= submit_tag("Display Chart") %>
-  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-<% end %>
+	<h1>Pie Chart Form</h1>
+	<%= form_tag("/charts/wins_pie_chart", method: "post") do %>
+	  <%= label_tag(:driver, "Select driver:") %>
+	  <%= collection_select(:driver, :driver_id, Driver.all, :id, :surname, :prompt => true, :selected => 1 ) %>
+	  <%= label_tag(:year, "Select year:") %>
+	  <%= select_tag(:year, options_for_select({"2017" => "2017", "2016" => "2016", "2015" => "2015", "2014" => "2014",
+	    "2013" => "2013", "2012" => "2012"}), :prompt => "Select year") %>
+	  <%= submit_tag("Display Chart") %>
+	  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+	<% end %>
 </center>
