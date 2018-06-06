@@ -18,6 +18,9 @@ Rails.application.routes.draw do
   get '/piecharts', to: 'charts#wins_form'
   get '/columncharts', to: 'charts#column_chart_form'
   get '/linecharts', to: 'charts#line_chart_form'
+  get    '/login',   to: 'sessions#new'
+  post   '/login',   to: 'sessions#create'
+  delete '/logout',  to: 'sessions#destroy'
 
   resources :races
   resources :results

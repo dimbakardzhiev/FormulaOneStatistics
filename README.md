@@ -1,10 +1,7 @@
 # Formula One Statistics README
 
 The Formula One Statistics application uses open data from https://www.kaggle.com/cjgdev/formula-1-race-data-19502017 to
-compare the race statistics of seven current Formula One drivers, Lewis Hamilton, Fernando Alonso, Felipe Massa, 
-Sebastian Vettel, Nico Hulkenberg, Sergio Perez and Daniel Ricciardo, across the seasons 2012-2017. It does so by using
-a range of pie charts, line charts and column charts. The application also makes us live twitter data, displaying the 15 most
-recent twitter mentions of Lewis Hamilton in real time.
+compare the race statistics of seven current Formula One drivers, Lewis Hamilton, Fernando Alonso, Felipe Massa, Sebastian Vettel, Nico Hulkenberg, Sergio Perez and Daniel Ricciardo, across the seasons 2012-2017. It does so by using a range of pie charts, line charts and column charts. The application also makes us live twitter data, displaying the 15 most recent twitter mentions of Formula One in real time.
 
 How to run:
 
